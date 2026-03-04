@@ -92,6 +92,7 @@ ul {
 }
 
 .tit-projetos {
+  margin-top: 24px;
   font-size: 1.75rem;
 }
 
@@ -197,13 +198,13 @@ ul {
 
 .modal-close {
   background-color: white;
-  padding: 0px 10px;
   border-radius: 100%;
   position: sticky;
   top: 0;
-  font-size: 32px;
+  font-size: 20px;
   cursor: pointer;
   float: right;
+  z-index: 2000;
 }
 
 .em-breve {
@@ -223,7 +224,7 @@ ul {
   padding: 24px 16px;
   color: var(--cor-clara-50);
   text-align: center;
-  padding: 0 10vw;
+  padding: 16px 10vw 0px;
 }
 
 .copy-final {

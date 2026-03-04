@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
@@ -85,7 +85,54 @@
           <h1 class="tit-projetos">Nossos Projetos</h1>
           <p class="subtit-projetos">Confira alguns dos nossos trabalhos</p>
         </div>
+
         <!-- CARD 1 -->
+        <div class="box-imgs-projetos reveal">
+          <h2 class="tit-card-projeto">Paulo Carvalho</h2>
+          <div class="card-img-projetos">
+            <img
+              src="imagens/pag-portfolio/siteDoPaulo.png"
+              alt="Wireframe da AureaLex Advocacia"
+              class="img-projeto"
+              width="265"
+              height="680"
+              fetchpriority="high"
+            />
+          </div>
+          <div class="btn-exibir">
+            <button
+              onclick="
+                exibirCardPort('imagens/pag-portfolio/siteDoPaulo.png')
+              "
+            >
+              Exibir
+            </button>
+          </div>
+        </div>
+        <!-- CARD 2 -->
+        <div class="box-imgs-projetos reveal">
+          <h2 class="tit-card-projeto">
+            <a href="https://limathays.com">Thays Lima</a> - Estrategista de Conteúdo
+          </h2>
+          <div class="card-img-projetos">
+            <img
+              src="imagens/pag-portfolio/thayslima.jpg"
+              alt="Wireframe da AureaLex Advocacia"
+              class="img-projeto"
+              width="265"
+              height="680"
+              fetchpriority="high"
+            />
+          </div>
+          <div class="btn-exibir">
+            <button
+              onclick="exibirCardPort('imagens/pag-portfolio/thayslima.jpg')"
+            >
+              Exibir
+            </button>
+          </div>
+        </div>
+        <!-- CARD 3 -->
         <div class="box-imgs-projetos reveal">
           <h2 class="tit-card-projeto">AureaLex Advocacia</h2>
           <div class="card-img-projetos">
@@ -100,13 +147,15 @@
           </div>
           <div class="btn-exibir">
             <button
-              onclick="exibirCardPort('imagens/pag-portfolio/aurealex-advocacia.webp')"
+              onclick="
+                exibirCardPort('imagens/pag-portfolio/aurealex-advocacia.webp')
+              "
             >
               Exibir
             </button>
           </div>
         </div>
-        <!-- CARD 2 -->
+        <!-- CARD 4 -->
         <div class="box-imgs-projetos reveal">
           <h2 class="tit-card-projeto">Lúmina Imóveis</h2>
           <div class="card-img-projetos">
@@ -120,13 +169,15 @@
           </div>
           <div class="btn-exibir">
             <button
-              onclick="exibirCardPort('imagens/pag-portfolio/lumina-imoveis.webp')"
+              onclick="
+                exibirCardPort('imagens/pag-portfolio/lumina-imoveis.webp')
+              "
             >
               Exibir
             </button>
           </div>
         </div>
-        <!-- CARD 3 -->
+        <!-- CARD 5 -->
         <div class="box-imgs-projetos reveal">
           <h2 class="tit-card-projeto">Nexum Contabilidade</h2>
           <div class="card-img-projetos">
@@ -140,7 +191,9 @@
           </div>
           <div class="btn-exibir">
             <button
-              onclick="exibirCardPort('imagens/pag-portfolio/nexum-contabilidade.webp')"
+              onclick="
+                exibirCardPort('imagens/pag-portfolio/nexum-contabilidade.webp')
+              "
             >
               Exibir
             </button>
@@ -219,8 +272,8 @@
     </footer>
     <div class="modal" id="modalProjeto">
       <div class="modal-content">
-        <span class="modal-close" onclick="fecharModal()">x</span>
-        <img src="" alt="Projeto em destaque" />
+        <p class="modal-close" onclick="fecharModal()"><img src="imagens/elements/icons/excluir.png" alt="X"></p>
+        
       </div>
     </div>
     <script src="scripts/pag-portfolio.js"></script>
